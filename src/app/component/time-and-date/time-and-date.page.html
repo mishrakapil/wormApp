@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-buttons slot="start" class="back-btn">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+  <ion-toolbar>
+    <ion-title >time-and-date</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="date-heading">Date and time</p>
+    <ul class="scroll-container"
+    (mouseleave)="showScroll = false"
+    (mouseenter)="showScroll = true"
+    [ngClass]="{'show-scroll' : showScroll}">
+     <li class="active"><span>Fri</span><b>25</b></li>
+     <li><span>Sat</span><b>26</b></li>
+     <li><span>Sun</span><b>27</b></li>
+     <li><span>Mon</span><b>28</b></li>
+     <li><span>Tue</span><b>29</b></li>
+     <li><span>Wed</span><b>30</b></li>
+     <li><span>Thu</span><b>31</b></li>
+    </ul>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="time-slots"><p>24HRS</p></div>
+        </ion-col>
+        <ion-col size="4">
+            <div class="time-slots"><p>2PM-4PM</p></div>
+          </ion-col>
+          <ion-col size="4">
+              <div class="time-slots"><p>4PM-6PM</p></div>
+            </ion-col>
+              <ion-col size="4">
+                  <div class="time-slots"><p>6PM-8PM</p></div>
+                </ion-col>
+                <ion-col size="4">
+                    <div class="time-slots"><p>8PM-10PM</p></div>
+                  </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p class="date-heading">Address</p>
+    <!-- IF address not available -->
+    <!-- <div class="add-new-address">
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <p>Add new address</p>
+    </div> -->
+    <div class="address-added">
+        <!-- <ion-icon name="add-circle-outline"></ion-icon> -->
+        <ion-icon name="create-outline"></ion-icon>
+      <h2>Pankaj Mittal</h2>
+      <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
+    </div>
+
+    <p class="date-heading">Description</p>
+    <div class="text-area">
+        <ion-textarea placeholder="Description..."></ion-textarea>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+              <ion-button color="primary" size="full" [routerLink]="['/select-provider']">CHOOSE PROVIDER</ion-button>
+          </ion-col>
+          <ion-col size="2">
+              <p class="text-center">or</p>
+          </ion-col>
+          <ion-col size="5">
+              <ion-button color="primary" size="full" >ON DEMAND</ion-button>
+          </ion-col>
+
+          <ion-col col="12">
+              <ion-button color="success" size="full" [routerLink]="['/order-confirmation']">CONTINUE BOKKING</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>     
+    </div>
+</ion-content>

@@ -1,0 +1,50 @@
+.rating{
+    text-align: center;
+    margin-bottom: 10px;
+    img{
+        max-width: 80px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.875rem;
+
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            ion-icon{
+                font-size:1.6rem   ;
+            }
+        }
+    }
+}
+h3{
+    text-align: center;
+}
+ion-grid{
+    ion-col{
+        text-align: center;
+        img{
+            max-width: 80px;
+        }
+    }
+}
+.form-section{
+    h4{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    p{
+        margin-top: 10px;
+        text-align: center;
+        color: var(--ion-color-primary)
+    }
+    ion-button{
+        margin-top: 10px
+    }
+}

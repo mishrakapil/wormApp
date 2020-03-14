@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-buttons slot="start" class="back-btn">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  <ion-toolbar>
+    <ion-title>order confirmation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-thumbnail>
+        <ion-label>Pankaj Mittal
+            <p>8852904783</p>
+        </ion-label>
+        <div class="money" slot="end"><p>$2000<span>Price/Hr</span></p></div>
+      </ion-item>      
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <p>Service</p>
+                <span>Wac Dressing</span>
+              </ion-col>
+              <ion-col size="4">
+                  <p>Date</p>
+                  <span>2019-12-20</span>
+                </ion-col>
+                <ion-col size="4">
+                    <p>Time</p>
+                    <span>4PM-6PM</span>
+                  </ion-col>
+            </ion-row>
+          </ion-grid>
+          <div class="address-detail">
+            <h1>Pankaj Mittal</h1>
+            <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
+          </div>
+
+          <div class="map-booking">
+            <img src="../../../assets/img/smallmap.png">
+          </div>
+          <ion-button color="primary" size="full" (click)="BookingConfirmPopupPage()">Confirm booking</ion-button>
+</ion-content>

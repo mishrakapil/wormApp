@@ -1,0 +1,29 @@
+
+ion-content{
+    ion-grid{
+        padding: 0px;
+    }
+    .thumbnail{
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        h1{
+          font-size: 0.87rem;
+        }p{
+          font-size: 0.87rem;
+        }
+        ion-icon{
+          position: absolute;
+          top: -1px;
+          right: 0px;
+          background: var(--ion-color-primary);
+          color: #fff;
+          padding: 4px;
+          border-top-right-radius: 9px;
+        }
+        img{
+          border-radius: 10px;
+          height: 80px;
+        }
+      }
+}

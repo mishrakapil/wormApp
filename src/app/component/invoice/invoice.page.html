@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-buttons slot="start" class="back-btn">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+  <ion-toolbar>
+    <ion-title>invoice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ul class="money-pay-options">
+      <li class="active">
+          <span><ion-icon name="wallet-outline" class="pattern-pay"></ion-icon></span>
+          <p>Cash</p>
+          <ion-icon name="checkmark-circle"  class="check"></ion-icon>
+      </li>
+      <li>
+        <span><ion-icon name="card-outline" class="pattern-pay"></ion-icon></span>
+        <p>Card</p>
+        <ion-icon name="checkmark-circle" class="check"></ion-icon>
+    </li>
+    </ul>
+    <h2>Apply Coupon <ion-icon name="play-outline"></ion-icon></h2>
+    <h3>INVOICE</h3>
+    <div class="table">
+      <table>
+        <tbody>
+            <tr>
+              <td>Provider Name</td>
+              <td>Pankaj mittal</td>
+            </tr>
+            <tr>
+              <td>Billing Name</td>
+              <td>Pankaj mittal</td>
+            </tr>
+            <tr>
+              <td>Booking ID</td>
+              <td>UX9121749827</td>
+            </tr>
+            <tr>
+              <td>Date </td>
+              <td>2019-12-20</td>
+            </tr>
+            <tr>
+              <td>Worked hours</td>
+              <td>0.01hrs</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td>4PM-6PM</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>$33.33</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tax">
+          <h4>Tax</h4>
+          <p>VAT 16%  <span>$5.33</span></p>
+        </div>
+        <div class="total"><p>Total <span>$38.67</span></p></div>
+        <ion-button color="primary" size="full" [routerLink]="['/about-service']">CONFIRM</ion-button>
+  </div>
+  
+</ion-content>

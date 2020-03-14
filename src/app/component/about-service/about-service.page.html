@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-buttons slot="start" class="back-btn">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+  <ion-toolbar>
+    <ion-title>Rating</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="rating">
+    <img src="../../../assets/img/write.png" alt="">
+    <h1>Give us your rating</h1>
+    <p>Help your provider improved their service by rating them </p>
+    <ul>
+      <li><ion-icon name="star-outline"></ion-icon></li>
+      <li><ion-icon name="star-outline"></ion-icon></li>
+      <li><ion-icon name="star-outline"></ion-icon></li>
+      <li><ion-icon name="star-outline"></ion-icon></li>
+      <li><ion-icon name="star-outline"></ion-icon></li>
+    </ul>
+  </div>
+  <h3>BOOKING ID : <span>UX 9105765</span></h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <div class="about-services">
+          <p>Before Service</p>
+          <img src="../../../assets/img/pathalogy.jpg" alt="">
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="about-services">
+          <p>After Service</p>
+          <img src="../../../assets/img/pathalogy.jpg" alt="">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="form-section">
+      <form action="">
+          <h4>Tell us about the service?</h4> 
+          <ion-item>
+               <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-button color="primary" size="full" (click)="ratingPage()">Submit</ion-button>
+               <p>Get Receipts</p>
+        </form>
+  </div>
+</ion-content>

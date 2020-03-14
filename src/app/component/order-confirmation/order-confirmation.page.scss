@@ -1,0 +1,42 @@
+ion-content {
+  font-size: 0.875rem;
+  ion-item {
+    --border-color: transparent;
+    ion-lable {
+      text-transform: uppercase;
+    }
+    ion-thumbnail {
+      --border-radius: 4px;
+    }
+    .money {
+      color: var(--ion-color-primary);
+      span {
+        display: block;
+      }
+    }
+  }
+  ion-grid {
+    ion-col {
+      text-align: center;
+      p {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .address-detail {
+    background-color: #dddddd;
+    padding: 16px;
+    margin-top: 16px;
+    h1 {
+      font-size: 0.975rem;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 0.775rem;
+    }
+  }
+  ion-button {
+    margin: 20px;
+    text-transform: uppercase;
+  }
+}

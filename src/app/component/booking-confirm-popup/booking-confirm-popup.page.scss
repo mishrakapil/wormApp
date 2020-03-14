@@ -1,0 +1,19 @@
+ion-content{
+    h1{
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    ion-icon{
+        font-size: 1.875rem;
+        color: var(--ion-color-primary);
+        margin: 6px 0px;
+    }
+    p{
+        font-size: 0.875rem;
+    }
+    ion-button{
+        max-width: 100px;
+        margin:12px auto 0px;
+    }
+}
